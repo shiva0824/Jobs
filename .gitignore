@@ -9,3 +9,20 @@ models/
 __pycache__/
 *.pyc
 *.pyo
+
+# Virtual envs
+.venv/
+env/
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Logs & temp
+*.log
+*.tmp
+
+# Phase 2 large models/artifacts
+JobSkill_RecommendationEngine/models/
+JobSkill_RecommendationEngine/artifacts/
+JobSkill_RecommendationEngine/src/kb_loader.py

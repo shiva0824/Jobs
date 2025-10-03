@@ -1,0 +1,900 @@
+[
+  {
+    "title": "Data Analyst",
+    "level": "junior",
+    "technical": [
+      "SQL", "Excel", "Google Sheets", "Tableau", "Power BI",
+      "Python (Pandas, NumPy)", "Data Cleaning", "Basic Statistics"
+    ],
+    "soft": ["attention to detail", "communication"]
+  },
+  {
+    "title": "Data Analyst",
+    "level": "mid",
+    "technical": [
+      "SQL", "Python (Pandas, NumPy, Matplotlib, Seaborn)",
+      "Tableau", "Power BI", "Looker", "Snowflake", "Data Modeling",
+      "A/B Testing", "Advanced Excel"
+    ],
+    "soft": ["problem-solving", "critical thinking"]
+  },
+  {
+    "title": "Data Analyst",
+    "level": "senior",
+    "technical": [
+      "SQL", "Python", "R", "Tableau", "Power BI", "Snowflake",
+      "ETL Tools", "Data Warehousing", "Cloud Platforms (AWS/GCP/Azure)",
+      "Advanced Statistics", "Business Intelligence"
+    ],
+    "soft": ["business acumen", "mentoring"]
+  },
+  {
+    "title": "Business Intelligence Analyst",
+    "level": "mid",
+    "technical": [
+      "SQL", "Python", "Tableau", "Power BI", "Looker",
+      "SSRS", "Data Warehousing", "Snowflake", "Star Schema"
+    ],
+    "soft": ["storytelling", "collaboration"]
+  },
+  {
+    "title": "Marketing Data Analyst",
+    "level": "mid",
+    "technical": [
+      "SQL", "Python", "Google Analytics", "Tableau",
+      "BigQuery", "Excel", "Looker Studio", "A/B Testing"
+    ],
+    "soft": ["business acumen", "communication"]
+  },
+  {
+    "title": "Operations Data Analyst",
+    "level": "senior",
+    "technical": [
+      "SQL", "Python", "R", "Power BI", "Snowflake",
+      "ETL Pipelines", "AWS Redshift", "Data Warehousing",
+      "Statistical Modeling"
+    ],
+    "soft": ["decision-making", "problem-solving"]
+  },
+  {
+    "title": "Financial Data Analyst",
+    "level": "senior",
+    "technical": [
+      "SQL", "Python", "Excel (Pivot Tables, VBA)", "Power BI",
+      "Tableau", "Bloomberg Terminal", "Financial Modeling",
+      "Monte Carlo Simulation"
+    ],
+    "soft": ["accuracy", "business acumen"]
+  },
+  {
+    "title": "Data Engineer",
+    "level": "junior",
+    "technical": [
+      "Python", "SQL", "ETL Tools", "Linux", "Git",
+      "Basic Shell Scripting", "Excel"
+    ],
+    "soft": ["adaptability", "teamwork"]
+  },
+  {
+    "title": "Data Engineer",
+    "level": "mid",
+    "technical": [
+      "Python", "SQL", "Apache Airflow", "Apache Spark",
+      "AWS Redshift", "AWS S3", "Docker", "Terraform",
+      "CI/CD (Jenkins, GitHub Actions)", "Snowflake", "Databricks"
+    ],
+    "soft": ["system design", "problem-solving"]
+  },
+  {
+    "title": "Data Engineer",
+    "level": "senior",
+    "technical": [
+      "Python", "Scala", "Java", "SQL", "Apache Kafka",
+      "Apache Spark", "Apache Flink", "Kubernetes", "Docker",
+      "AWS/GCP/Azure", "Terraform", "Data Lakes", "Data Warehousing"
+    ],
+    "soft": ["leadership", "mentoring"]
+  },
+  {
+    "title": "ETL Data Engineer",
+    "level": "mid",
+    "technical": [
+      "SQL", "Python", "SSIS", "Apache Airflow", "AWS Glue",
+      "Snowflake", "Data Modeling", "Informatica"
+    ],
+    "soft": ["documentation", "problem-solving"]
+  },
+  {
+    "title": "Streaming Data Engineer",
+    "level": "senior",
+    "technical": [
+      "Apache Kafka", "Apache Flink", "Apache Spark Streaming",
+      "Scala", "AWS Kinesis", "GCP Pub/Sub", "NoSQL (Cassandra, MongoDB)"
+    ],
+    "soft": ["collaboration", "system design"]
+  },
+  {
+    "title": "Cloud Data Engineer",
+    "level": "senior",
+    "technical": [
+      "Python", "SQL", "BigQuery", "Snowflake", "Databricks",
+      "Apache Airflow", "Terraform", "Docker", "Kubernetes",
+      "AWS/GCP/Azure"
+    ],
+    "soft": ["problem-solving", "communication"]
+  },
+  {
+    "title": "Data Scientist",
+    "level": "junior",
+    "technical": [
+      "Python (Pandas, NumPy, Scikit-learn)", "SQL",
+      "Statistics", "Matplotlib", "Seaborn"
+    ],
+    "soft": ["analytical thinking", "curiosity"]
+  },
+  {
+    "title": "Data Scientist",
+    "level": "mid",
+    "technical": [
+      "Python", "Scikit-learn", "TensorFlow", "PyTorch",
+      "SQL", "R", "MLflow", "NLP Basics", "Data Visualization"
+    ],
+    "soft": ["communication", "collaboration"]
+  },
+  {
+    "title": "Data Scientist",
+    "level": "senior",
+    "technical": [
+      "Python", "R", "TensorFlow", "PyTorch", "Transformers (HuggingFace)",
+      "SQL", "Big Data (Spark)", "MLOps", "Docker", "Kubernetes",
+      "AWS/GCP/Azure"
+    ],
+    "soft": ["leadership", "mentoring"]
+  },
+  {
+    "title": "Applied Data Scientist",
+    "level": "mid",
+    "technical": [
+      "Python", "Scikit-learn", "SQL", "MLflow", "NLP",
+      "Experiment Tracking", "Feature Engineering"
+    ],
+    "soft": ["problem-solving", "collaboration"]
+  },
+  {
+    "title": "Research Data Scientist",
+    "level": "senior",
+    "technical": [
+      "Python", "R", "PyTorch", "TensorFlow", "NLP (BERT, GPT)",
+      "Deep Learning", "Computer Vision", "Generative AI",
+      "High-Performance Computing"
+    ],
+    "soft": ["creativity", "critical thinking"]
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "level": "junior",
+    "technical": [
+      "Python", "Scikit-learn", "SQL", "Pandas", "NumPy",
+      "Matplotlib"
+    ],
+    "soft": ["teamwork", "curiosity"]
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "level": "mid",
+    "technical": [
+      "Python", "TensorFlow", "PyTorch", "MLflow", "Docker",
+      "SQL", "AWS SageMaker", "Feature Stores"
+    ],
+    "soft": ["problem-solving", "collaboration"]
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "level": "senior",
+    "technical": [
+      "Python", "TensorFlow", "PyTorch", "Transformers",
+      "Kubernetes", "Kubeflow", "MLflow", "CI/CD for ML",
+      "AWS/GCP/Azure", "Distributed Training"
+    ],
+    "soft": ["leadership", "system design"]
+  },
+  {
+    "title": "MLOps Engineer",
+    "level": "mid",
+    "technical": [
+      "Python", "MLflow", "Docker", "Kubernetes",
+      "Airflow", "CI/CD", "Terraform", "AWS SageMaker"
+    ],
+    "soft": ["system design", "collaboration"]
+  },
+  {
+    "title": "AI Engineer",
+    "level": "senior",
+    "technical": [
+      "Python", "PyTorch", "TensorFlow", "LangChain",
+      "LLM Fine-tuning", "Vector Databases (Pinecone, FAISS)",
+      "Prompt Engineering", "Docker", "Kubernetes"
+    ],
+    "soft": ["innovation", "mentoring"]
+  },
+  {
+    "title": "Cloud Engineer",
+    "level": "junior",
+    "technical": [
+      "AWS EC2", "AWS S3", "Linux", "Terraform Basics",
+      "Python", "Networking Fundamentals", "Git"
+    ],
+    "soft": ["adaptability", "teamwork"]
+  },
+  {
+    "title": "Cloud Engineer",
+    "level": "mid",
+    "technical": [
+      "AWS (EC2, S3, Lambda, VPC)", "Terraform", "Docker",
+      "Kubernetes", "Python", "CI/CD (Jenkins, GitHub Actions)",
+      "Cloud Monitoring (CloudWatch, Prometheus)"
+    ],
+    "soft": ["problem-solving", "collaboration"]
+  },
+  {
+    "title": "Cloud Engineer",
+    "level": "senior",
+    "technical": [
+      "AWS/GCP/Azure", "Terraform", "Ansible", "Kubernetes",
+      "Docker", "Python", "Go", "Cloud Security",
+      "Distributed Systems", "CI/CD Automation", "Networking (BGP, DNS)"
+    ],
+    "soft": ["leadership", "system design"]
+  },
+  {
+    "title": "Cloud Solutions Architect",
+    "level": "senior",
+    "technical": [
+      "AWS/GCP/Azure Architecture", "Microservices Design",
+      "Networking", "Serverless (Lambda, Functions)",
+      "Kubernetes", "Terraform", "Cost Optimization",
+      "Security & Compliance (CIS, HIPAA, SOC2)"
+    ],
+    "soft": ["stakeholder management", "mentoring"]
+  },
+  {
+    "title": "Cybersecurity Analyst",
+    "level": "junior",
+    "technical": [
+      "Network Security", "Firewalls", "SIEM Tools (Splunk, QRadar)",
+      "Python", "Linux", "Windows Security"
+    ],
+    "soft": ["attention to detail", "integrity"]
+  },
+  {
+    "title": "Cybersecurity Analyst",
+    "level": "mid",
+    "technical": [
+      "Incident Response", "Threat Hunting", "Vulnerability Scanning",
+      "Penetration Testing", "SIEM Tools (Splunk, ELK)",
+      "Python", "Cloud Security (AWS, Azure)"
+    ],
+    "soft": ["problem-solving", "communication"]
+  },
+  {
+    "title": "Cybersecurity Analyst",
+    "level": "senior",
+    "technical": [
+      "Incident Response", "Threat Intelligence", "Cloud Security",
+      "Identity & Access Management", "Forensics", "Red/Blue Teaming",
+      "Scripting (Python, Bash, PowerShell)"
+    ],
+    "soft": ["leadership", "mentoring"]
+  },
+  {
+    "title": "SOC Analyst",
+    "level": "mid",
+    "technical": [
+      "SIEM Tools (Splunk, QRadar, ELK)", "Threat Detection",
+      "Incident Response", "Packet Analysis (Wireshark)",
+      "Linux", "Windows Server Security"
+    ],
+    "soft": ["collaboration", "critical thinking"]
+  },
+  {
+    "title": "Network Security Engineer",
+    "level": "senior",
+    "technical": [
+      "Firewalls (Palo Alto, Fortinet)", "VPN", "IDS/IPS",
+      "Network Monitoring", "BGP, OSPF", "Zero Trust Architecture",
+      "Scripting (Python, Bash)"
+    ],
+    "soft": ["system design", "communication"]
+  },
+  {
+    "title": "Full Stack Developer",
+    "level": "junior",
+    "technical": [
+      "HTML", "CSS", "JavaScript", "React", "Node.js",
+      "Git", "REST APIs", "SQL Basics"
+    ],
+    "soft": ["teamwork", "curiosity"]
+  },
+  {
+    "title": "Full Stack Developer",
+    "level": "mid",
+    "technical": [
+      "JavaScript", "TypeScript", "React", "Node.js", "Express",
+      "SQL (Postgres, MySQL)", "NoSQL (MongoDB)", "Docker",
+      "CI/CD Pipelines", "REST & GraphQL APIs"
+    ],
+    "soft": ["problem-solving", "collaboration"]
+  },
+  {
+    "title": "Full Stack Developer",
+    "level": "senior",
+    "technical": [
+      "JavaScript", "TypeScript", "React", "Next.js", "Node.js",
+      "Spring Boot", "Postgres", "MongoDB", "Docker", "Kubernetes",
+      "AWS/GCP", "CI/CD Automation", "Microservices"
+    ],
+    "soft": ["leadership", "system design"]
+  },
+  {
+    "title": "Frontend Developer",
+    "level": "mid",
+    "technical": [
+      "HTML", "CSS", "JavaScript", "TypeScript", "React",
+      "Next.js", "Redux", "Webpack", "Testing (Jest, Cypress)"
+    ],
+    "soft": ["attention to detail", "UX focus"]
+  },
+  {
+    "title": "Backend Developer",
+    "level": "mid",
+    "technical": [
+      "Java", "Spring Boot", "Python (Django, FastAPI)",
+      "Node.js", "Express", "SQL (Postgres, MySQL)",
+      "NoSQL (MongoDB, DynamoDB)", "Docker", "REST APIs"
+    ],
+    "soft": ["problem-solving", "collaboration"]
+  },
+  {
+    "title": "Backend Developer",
+    "level": "senior",
+    "technical": [
+      "Java", "Spring Boot", "Python", "Go", "Microservices",
+      "SQL/NoSQL Databases", "gRPC", "Kafka", "Docker",
+      "Kubernetes", "AWS/GCP/Azure"
+    ],
+    "soft": ["system design", "mentoring"]
+  },
+  {
+    "title": "Software Developer",
+    "level": "junior",
+    "technical": [
+      "Java", "Python", "Git", "SQL Basics",
+      "OOP Concepts", "Debugging", "Unit Testing"
+    ],
+    "soft": ["teamwork", "adaptability"]
+  },
+  {
+    "title": "Software Developer",
+    "level": "mid",
+    "technical": [
+      "Java", "Python", "C#", "Spring Boot", "Django",
+      "SQL (Postgres, MySQL)", "NoSQL (MongoDB)", "CI/CD",
+      "Docker", "Agile Development"
+    ],
+    "soft": ["problem-solving", "collaboration"]
+  },
+  {
+    "title": "Software Developer",
+    "level": "senior",
+    "technical": [
+      "Java", "Python", "C++", "Go", "Microservices",
+      "SQL/NoSQL Databases", "Docker", "Kubernetes",
+      "AWS/GCP/Azure", "System Design"
+    ],
+    "soft": ["leadership", "mentoring"]
+  },
+  {
+    "title": "Mobile App Developer",
+    "level": "mid",
+    "technical": [
+      "Kotlin", "Java", "Swift", "React Native",
+      "Flutter", "iOS SDK", "Android SDK", "Firebase"
+    ],
+    "soft": ["creativity", "problem-solving"]
+  },
+  {
+    "title": "DevOps Engineer",
+    "level": "junior",
+    "technical": [
+      "Linux", "Python", "Shell Scripting", "Git",
+      "CI/CD Basics", "Docker", "Jenkins"
+    ],
+    "soft": ["teamwork", "adaptability"]
+  },
+  {
+    "title": "DevOps Engineer",
+    "level": "mid",
+    "technical": [
+      "Linux", "Python", "Terraform", "Ansible",
+      "Docker", "Kubernetes", "AWS/GCP",
+      "CI/CD (Jenkins, GitHub Actions)", "Monitoring (Prometheus, Grafana)"
+    ],
+    "soft": ["problem-solving", "collaboration"]
+  },
+  {
+    "title": "DevOps Engineer",
+    "level": "senior",
+    "technical": [
+      "Linux", "Python", "Go", "Terraform", "Ansible",
+      "Kubernetes", "Docker", "AWS/GCP/Azure",
+      "CI/CD Automation", "Security & Compliance",
+      "Distributed Systems"
+    ],
+    "soft": ["leadership", "system design"]
+  },
+  {
+    "title": "Site Reliability Engineer",
+    "level": "mid",
+    "technical": [
+      "Linux", "Go", "Python", "Monitoring (Prometheus, Grafana)",
+      "Kubernetes", "Docker", "Terraform", "Incident Response"
+    ],
+    "soft": ["problem-solving", "collaboration"]
+  },
+  {
+    "title": "Database Administrator",
+    "level": "junior",
+    "technical": [
+      "SQL", "PostgreSQL", "MySQL", "Backup & Recovery",
+      "Basic Indexing", "User Management", "Linux"
+    ],
+    "soft": ["attention to detail", "teamwork"]
+  },
+  {
+    "title": "Database Administrator",
+    "level": "mid",
+    "technical": [
+      "PostgreSQL", "MySQL", "Oracle DB", "SQL Server",
+      "Query Optimization", "Database Security",
+      "Replication & Clustering", "Shell Scripting"
+    ],
+    "soft": ["problem-solving", "collaboration"]
+  },
+  {
+    "title": "Database Administrator",
+    "level": "senior",
+    "technical": [
+      "PostgreSQL", "Oracle", "SQL Server", "MongoDB",
+      "Sharding", "High Availability", "Disaster Recovery",
+      "Performance Tuning", "Cloud Databases (AWS RDS, GCP CloudSQL)"
+    ],
+    "soft": ["leadership", "mentoring"]
+  },
+  {
+    "title": "Database Engineer",
+    "level": "mid",
+    "technical": [
+      "PostgreSQL", "MySQL", "Oracle", "Data Modeling",
+      "ETL Tools", "SQL Optimization", "Snowflake"
+    ],
+    "soft": ["documentation", "problem-solving"]
+  },
+  {
+    "title": "NoSQL Database Administrator",
+    "level": "senior",
+    "technical": [
+      "MongoDB", "Cassandra", "DynamoDB", "Couchbase",
+      "Replication & Sharding", "Cluster Management",
+      "Backup & Recovery", "Performance Optimization"
+    ],
+    "soft": ["adaptability", "system design"]
+  },
+  {
+    "title": "Big Data Engineer",
+    "level": "mid",
+    "technical": [
+      "Apache Hadoop", "Apache Spark", "Hive", "Pig",
+      "Python", "Java", "Kafka", "HDFS", "Airflow"
+    ],
+    "soft": ["problem-solving", "collaboration"]
+  },
+  {
+    "title": "Big Data Engineer",
+    "level": "senior",
+    "technical": [
+      "Apache Spark", "Scala", "Java", "Kafka",
+      "HBase", "Hive", "Airflow", "AWS EMR",
+      "GCP Dataproc", "Distributed Systems"
+    ],
+    "soft": ["leadership", "mentoring"]
+  },
+  {
+    "title": "Data Platform Engineer",
+    "level": "senior",
+    "technical": [
+      "Snowflake", "Databricks", "Redshift", "BigQuery",
+      "Airflow", "Terraform", "Docker", "Kubernetes",
+      "Python", "Scala"
+    ],
+    "soft": ["system design", "collaboration"]
+  },
+  {
+    "title": "AI Research Engineer",
+    "level": "mid",
+    "technical": [
+      "Python", "PyTorch", "TensorFlow", "Transformers",
+      "Deep Learning", "Reinforcement Learning",
+      "HuggingFace", "NLP", "Computer Vision"
+    ],
+    "soft": ["curiosity", "innovation"]
+  },
+  {
+    "title": "AI Research Engineer",
+    "level": "senior",
+    "technical": [
+      "Python", "PyTorch", "TensorFlow", "Large Language Models",
+      "NLP (BERT, GPT)", "Computer Vision", "GANs",
+      "High-Performance Computing", "Distributed Training"
+    ],
+    "soft": ["creativity", "mentoring"]
+  },
+  {
+    "title": "Data Architect",
+    "level": "senior",
+    "technical": [
+      "Data Modeling", "ETL Pipelines", "Data Warehousing",
+      "Snowflake", "Redshift", "BigQuery", "Spark",
+      "Python", "SQL", "Cloud Architecture (AWS/GCP/Azure)"
+    ],
+    "soft": ["system design", "leadership"]
+  },
+  {
+    "title": "Cloud Security Engineer",
+    "level": "mid",
+    "technical": [
+      "AWS Security Hub", "Azure Security Center",
+      "Identity & Access Management", "Encryption",
+      "Python", "Terraform", "Compliance (HIPAA, SOC2)"
+    ],
+    "soft": ["attention to detail", "communication"]
+  },
+  {
+    "title": "Cloud Security Engineer",
+    "level": "senior",
+    "technical": [
+      "Cloud Security Architecture", "Zero Trust",
+      "IAM", "Network Security", "Kubernetes Security",
+      "SIEM Tools", "Python", "Incident Response"
+    ],
+    "soft": ["system design", "leadership"]
+  },
+  {
+    "title": "Application Security Engineer",
+    "level": "mid",
+    "technical": [
+      "OWASP Top 10", "Penetration Testing",
+      "Static/Dynamic Code Analysis", "Python", "JavaScript",
+      "Threat Modeling", "Secure SDLC"
+    ],
+    "soft": ["critical thinking", "problem-solving"]
+  },
+  {
+    "title": "Penetration Tester",
+    "level": "mid",
+    "technical": [
+      "Kali Linux", "Metasploit", "Burp Suite",
+      "Nmap", "Wireshark", "Python", "Exploit Development",
+      "Web App Security", "Cloud Security Basics"
+    ],
+    "soft": ["creativity", "curiosity"]
+  },
+  {
+    "title": "Penetration Tester",
+    "level": "senior",
+    "technical": [
+      "Exploit Development", "Reverse Engineering",
+      "Cloud Pen Testing", "Red Team/Blue Team Exercises",
+      "Custom Tooling (Python, Go)", "Advanced Web Security",
+      "Forensics"
+    ],
+    "soft": ["mentoring", "innovation"]
+  },
+  {
+    "title": "Security Architect",
+    "level": "senior",
+    "technical": [
+      "Enterprise Security Architecture", "Zero Trust",
+      "Cloud Security", "IAM", "Network Security",
+      "Incident Response", "Compliance Frameworks (HIPAA, PCI DSS, GDPR)"
+    ],
+    "soft": ["leadership", "system design"]
+  },
+  {
+    "title": "Blockchain Developer",
+    "level": "mid",
+    "technical": [
+      "Solidity", "Ethereum", "Web3.js", "Smart Contracts",
+      "Truffle", "Ganache", "IPFS", "Node.js"
+    ],
+    "soft": ["innovation", "problem-solving"]
+  },
+  {
+    "title": "Blockchain Developer",
+    "level": "senior",
+    "technical": [
+      "Solidity", "Ethereum", "Rust", "Web3",
+      "Smart Contract Security", "Layer 2 Solutions",
+      "Consensus Mechanisms", "Hyperledger"
+    ],
+    "soft": ["system design", "mentoring"]
+  },
+  {
+    "title": "Site Reliability Engineer",
+    "level": "senior",
+    "technical": [
+      "Linux", "Go", "Python", "Kubernetes", "Docker",
+      "Terraform", "Monitoring (Prometheus, Grafana)",
+      "Chaos Engineering", "Incident Management"
+    ],
+    "soft": ["leadership", "collaboration"]
+  },
+  {
+    "title": "QA Engineer",
+    "level": "junior",
+    "technical": [
+      "Manual Testing", "Test Case Design",
+      "Selenium", "Python", "Bug Tracking (JIRA)",
+      "SQL Basics"
+    ],
+    "soft": ["attention to detail", "teamwork"]
+  },
+  {
+    "title": "QA Engineer",
+    "level": "mid",
+    "technical": [
+      "Automated Testing", "Selenium", "Cypress", "Playwright",
+      "Python", "JavaScript", "CI/CD Integration", "Postman"
+    ],
+    "soft": ["problem-solving", "collaboration"]
+  },
+  {
+    "title": "QA Engineer",
+    "level": "senior",
+    "technical": [
+      "Test Automation Frameworks", "Selenium", "Appium",
+      "Performance Testing (JMeter)", "Security Testing",
+      "CI/CD Pipelines", "Cloud Testing Platforms"
+    ],
+    "soft": ["leadership", "mentoring"]
+  },
+  {
+    "title": "Platform Engineer",
+    "level": "mid",
+    "technical": [
+      "Kubernetes", "Docker", "Terraform", "Ansible",
+      "Python", "CI/CD Pipelines", "Monitoring (Prometheus, Grafana)",
+      "Cloud (AWS/GCP/Azure)"
+    ],
+    "soft": ["problem-solving", "collaboration"]
+  },
+  {
+    "title": "Platform Engineer",
+    "level": "senior",
+    "technical": [
+      "Kubernetes", "Docker", "Terraform", "Helm",
+      "Python", "Go", "Service Mesh (Istio, Linkerd)",
+      "Cloud Architecture", "Distributed Systems"
+    ],
+    "soft": ["system design", "leadership"]
+  },
+  {
+    "title": "AI Ops Engineer",
+    "level": "mid",
+    "technical": [
+      "Python", "TensorFlow", "PyTorch", "MLflow",
+      "Kubernetes", "Docker", "Prometheus", "Grafana",
+      "CI/CD for ML", "AWS SageMaker"
+    ],
+    "soft": ["adaptability", "problem-solving"]
+  },
+  {
+    "title": "AI Ops Engineer",
+    "level": "senior",
+    "technical": [
+      "Python", "PyTorch", "TensorFlow", "MLOps Frameworks",
+      "Kubeflow", "MLflow", "ArgoCD", "Kubernetes", "Cloud Platforms",
+      "Monitoring AI Models", "LLM Deployment"
+    ],
+    "soft": ["system design", "mentoring"]
+  },
+  {
+    "title": "Cloud DevOps Engineer",
+    "level": "mid",
+    "technical": [
+      "AWS (EKS, ECS, Lambda)", "Terraform", "Ansible",
+      "CI/CD Pipelines", "Kubernetes", "Docker", "Python",
+      "Cloud Monitoring (CloudWatch, Datadog)"
+    ],
+    "soft": ["problem-solving", "collaboration"]
+  },
+  {
+    "title": "Cloud DevOps Engineer",
+    "level": "senior",
+    "technical": [
+      "AWS/GCP/Azure", "Terraform", "Ansible", "Pulumi",
+      "Kubernetes", "Docker", "Service Mesh", "Distributed Systems",
+      "Cloud Security", "CI/CD Automation"
+    ],
+    "soft": ["leadership", "system design"]
+  },
+  {
+    "title": "Data Governance Specialist",
+    "level": "mid",
+    "technical": [
+      "Data Catalogs (Collibra, Alation)", "Metadata Management",
+      "SQL", "Data Lineage Tools", "Data Quality Frameworks",
+      "GDPR/CCPA Compliance"
+    ],
+    "soft": ["attention to detail", "documentation"]
+  },
+  {
+    "title": "Data Governance Specialist",
+    "level": "senior",
+    "technical": [
+      "Data Governance Frameworks", "Data Quality Tools",
+      "Regulatory Compliance (GDPR, HIPAA, SOX)",
+      "SQL", "Cloud Data Governance (AWS Lake Formation, GCP Data Catalog)"
+    ],
+    "soft": ["leadership", "policy enforcement"]
+  },
+  {
+    "title": "Data Privacy Engineer",
+    "level": "mid",
+    "technical": [
+      "Data Masking", "Encryption (AES, RSA)", "Anonymization Techniques",
+      "SQL", "Python", "Cloud Security"
+    ],
+    "soft": ["integrity", "problem-solving"]
+  },
+  {
+    "title": "Observability Engineer",
+    "level": "mid",
+    "technical": [
+      "Prometheus", "Grafana", "Elastic Stack", "Datadog",
+      "Kubernetes", "Docker", "Python", "OpenTelemetry"
+    ],
+    "soft": ["analytical thinking", "collaboration"]
+  },
+  {
+    "title": "Observability Engineer",
+    "level": "senior",
+    "technical": [
+      "Prometheus", "Grafana", "Elastic Stack", "Splunk",
+      "OpenTelemetry", "Service Mesh Observability",
+      "Kubernetes", "Cloud Monitoring Platforms"
+    ],
+    "soft": ["system design", "leadership"]
+  },
+  {
+    "title": "Cloud Automation Engineer",
+    "level": "mid",
+    "technical": [
+      "Terraform", "Ansible", "Python", "Bash Scripting",
+      "AWS CloudFormation", "CI/CD", "Kubernetes"
+    ],
+    "soft": ["efficiency", "problem-solving"]
+  },
+  {
+    "title": "Cloud Automation Engineer",
+    "level": "senior",
+    "technical": [
+      "Terraform", "Pulumi", "Ansible", "Python", "Go",
+      "Cloud Native Architecture", "CI/CD Automation",
+      "Multi-Cloud Management"
+    ],
+    "soft": ["system design", "mentoring"]
+  },
+  {
+    "title": "Data Quality Engineer",
+    "level": "mid",
+    "technical": [
+      "SQL", "Python", "ETL Testing", "Data Validation Frameworks",
+      "Great Expectations", "Snowflake", "Airflow"
+    ],
+    "soft": ["attention to detail", "documentation"]
+  },
+  {
+    "title": "Data Quality Engineer",
+    "level": "senior",
+    "technical": [
+      "Data Validation Frameworks", "Python", "SQL",
+      "Big Data Testing (Spark, Hive)", "Great Expectations",
+      "Cloud Data Platforms"
+    ],
+    "soft": ["leadership", "mentoring"]
+  },
+  {
+    "title": "Infrastructure Engineer",
+    "level": "mid",
+    "technical": [
+      "Linux", "Networking", "Terraform", "Ansible",
+      "Python", "Kubernetes", "Cloud Platforms"
+    ],
+    "soft": ["problem-solving", "collaboration"]
+  },
+  {
+    "title": "Infrastructure Engineer",
+    "level": "senior",
+    "technical": [
+      "Linux", "Networking", "Terraform", "Pulumi",
+      "Kubernetes", "Docker", "Distributed Systems",
+      "Cloud Security"
+    ],
+    "soft": ["system design", "leadership"]
+  },
+  {
+    "title": "Cloud Infrastructure Architect",
+    "level": "senior",
+    "technical": [
+      "Cloud Architecture (AWS/GCP/Azure)", "Terraform",
+      "Networking (VPC, BGP, DNS)", "Kubernetes",
+      "Docker", "Security & Compliance"
+    ],
+    "soft": ["strategic thinking", "leadership"]
+  },
+  {
+    "title": "AI Product Manager",
+    "level": "mid",
+    "technical": [
+      "Python Basics", "Data Analysis", "ML Concepts",
+      "Agile Tools (Jira, Confluence)", "Prototyping (Figma, PowerBI)"
+    ],
+    "soft": ["stakeholder management", "communication"]
+  },
+  {
+    "title": "AI Product Manager",
+    "level": "senior",
+    "technical": [
+      "AI/ML Concepts", "Data Science Workflows",
+      "Cloud ML Platforms", "MLOps Fundamentals",
+      "Agile Project Management"
+    ],
+    "soft": ["leadership", "strategic planning"]
+  },
+  {
+    "title": "Data Steward",
+    "level": "mid",
+    "technical": [
+      "SQL", "Data Catalogs", "Metadata Management",
+      "Python Basics", "Data Quality Tools"
+    ],
+    "soft": ["documentation", "communication"]
+  },
+  {
+    "title": "Data Steward",
+    "level": "senior",
+    "technical": [
+      "Data Governance Frameworks", "Metadata Management",
+      "Regulatory Compliance", "SQL", "Cloud Data Catalogs"
+    ],
+    "soft": ["policy enforcement", "mentoring"]
+  },
+  {
+    "title": "Systems Engineer",
+    "level": "mid",
+    "technical": [
+      "Linux", "Windows Server", "Networking",
+      "Python", "Ansible", "Docker", "CI/CD Basics"
+    ],
+    "soft": ["teamwork", "problem-solving"]
+  },
+  {
+    "title": "Systems Engineer",
+    "level": "senior",
+    "technical": [
+      "Linux", "Windows Server", "Networking (BGP, DNS, Firewalls)",
+      "Kubernetes", "Docker", "Terraform", "Security Hardening"
+    ],
+    "soft": ["leadership", "system design"]
+  }
+]

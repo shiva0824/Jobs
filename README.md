@@ -184,14 +184,141 @@ The core service powering skill extraction:
 **Output:** clean, production-ready skill lists.  
 This layered approach ensures both **precision** and **recall** while keeping results professional.
 
+## Step 5: Recommendation Engine
+
+This phase introduced resume parsing, skill suggestions, resume ↔ job description matching, and job recommendations.
+
+### Resume Parsing
+
+Endpoint: **POST** `/api/resume/parse`
+
+- **Input**: Resume file (PDF/DOCX).
+- **Output**:
+
+```json
+{
+  "name": "Shiva Prasad",
+  "skills": {
+    "technical": ["Python", "SQL", "Machine Learning"],
+    "soft": ["communication"]
+  },
+  "experience": "2 years"
+}
+```
+
+#### Implementation details:
+
+- Extracts text using pdfplumber (PDF) and python-docx (DOCX).
+- Identifies skill sections via headers (Technical Skills, Core Skills, Tools & Technologies).
+- Separates technical vs soft skills using skill_phrases.json.
+- Regex-based fallback to capture years of experience.
+- If no skills are extracted, API returns a message instructing the user to enter them manually.
+
+#### Challenge faced:
+
+Public resume NER models did not yield clean results, so pivoted to a section-based fallback approach, which proved more robust and explainable.
+
+### Skill Suggestions (Autocomplete)
+
+Endpoint: GET /api/skills/suggest?q=
+
+- Loads skill_phrases.json into memory.
+- Returns case-insensitive prefix matches (e.g., py → Python, PyTorch, PySpark).
+- Limited to top 10 suggestions.
+- Supports UI autocomplete when entering skills manually.
+
+### Resume ↔ Job Description Matching
+
+Endpoint: POST /api/match
+
+Input:
+
+```
+{
+"job_description": "Looking for a Data Engineer with Python, SQL, Airflow.",
+"resume_skills": {
+"technical": ["Python", "SQL", "Git"],
+"soft": ["teamwork"]}
+}
+```
+
+Output:
+
+```
+{
+"match_score": 72,
+"technical": {
+"matched": ["Python", "SQL"],
+"missing": ["Airflow"],
+"extra": ["Git"]
+},
+"soft": {
+"matched": ["teamwork"],
+"missing": [],
+"extra": []}
+}
+```
+
+#### Scoring logic:
+
+Weighted Jaccard similarity:
+
+- 70% technical skills
+- 30% soft skills
+
+Outputs matched, missing, and extra skills for transparency.
+
+### Job Recommendations
+
+Endpoint: POST /api/recommend/jobs
+
+Input: Candidate’s skills (parsed from resume).
+
+Output: Ranked job recommendations with missing and extra skills.
+
+```
+{
+"recommendations": [
+{
+"title": "Data Engineer",
+"level": "mid",
+"score": 65,
+"breakdown": {
+"technical": {
+"matched": ["Python", "SQL"],
+"missing": ["Airflow", "Kafka", "Spark"],
+"extra": ["Git"]
+},
+"soft": {
+"matched": ["teamwork"],
+"missing": ["problem-solving"],
+"extra": []}}
+}
+]
+}
+```
+
+Knowledge Base (KB):
+
+- Initially used static JSON (job_skill_kb.json).
+- Migrated to Postgres for scalability:
+  - roles table: job titles & levels
+  - skills table: normalized skills
+  - role_skills table: mapping between roles and skills
+
 ## What’s Next
 
-With the **Model API** complete, the next major phase is to build the **Recommendation Engine**.  
-This component will:
+With the **Recommendation Engine** complete, the next phase will focus on **deployment and user interface**:
 
-- Parse resumes and candidate profiles.
-- Compare extracted resume skills with job description skills.
-- Rank candidates based on skill overlap and gaps.
-- Provide explainable recommendations (e.g., “Candidate A matches 80% of required technical skills, missing Kubernetes and MLflow”).
+- Frontend (React/Next.js):
 
-This will transform the project from a **skill extraction service** into a **full candidate-job matching platform**.
+  - Upload resume or paste job description.
+  - Show extracted skills and allow manual edits.
+  - Display match scores and missing skills.
+  - Dedicated page for job recommendations with filters (e.g., only jobs ≥50% match).
+
+- Backend Deployment (AWS):
+  - Containerize FastAPI with Docker.
+  - Deploy API on AWS (ECS/EC2/Lambda).
+  - Host Postgres in AWS RDS (private subnet).
+  - Secure API ↔ DB with VPC and IAM.

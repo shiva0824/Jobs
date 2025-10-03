@@ -39,7 +39,7 @@ def download_model_from_s3():
         if not os.path.exists(local_path):
             s3.download_file(BUCKET_NAME, key, local_path)
 
-download_model_from_s3()
+#download_model_from_s3()
 
 # --- Load model & tokenizer once ---
 tokenizer = AutoTokenizer.from_pretrained(LOCAL_MODEL_DIR)
