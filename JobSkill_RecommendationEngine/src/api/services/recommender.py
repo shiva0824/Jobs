@@ -1,16 +1,18 @@
 import psycopg2
 from psycopg2.extras import DictCursor
 from typing import Dict, List
+from src.core.config import settings
+
 
 # -------------------------------
 # DB connection settings
 # -------------------------------
 DB_CONFIG = {
-    "dbname": "jobs_kb",
-    "user": "postgres",
-    "password": "********",
-    "host": "localhost",
-    "port": 5432
+    "dbname": settings.DB_NAME,
+    "user": settings.DB_USER,
+    "password": settings.DB_PASSWORD,
+    "host": settings.DB_HOST,
+    "port": settings.DB_PORT
 }
 
 # -------------------------------

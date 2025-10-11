@@ -17,20 +17,16 @@ def get_password_hash(password: str) -> str:
 
 # Fake users database (for demo)
 fake_users_db = {
-    "alice": {
-        "username": "alice",
-        "hashed_password": get_password_hash("secret123"),
-    },
-    "bob": {
-        "username": "bob",
-        "hashed_password": get_password_hash("mypassword"),
-    },
+    "test_user": {
+        "username": "test_user",
+        "hashed_password": get_password_hash("testpassword"),
+    }
 }
 
 # JWT settings
-SECRET_KEY = "Approved!"   #move to env var in real projects
+SECRET_KEY = "Approved!"  
 ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 30
+ACCESS_TOKEN_EXPIRE_MINUTES = 120
 
 def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
     to_encode = data.copy()

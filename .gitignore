@@ -13,6 +13,7 @@ __pycache__/
 # Virtual envs
 .venv/
 env/
+.env
 
 # Editor / IDE
 .vscode/
@@ -25,4 +26,6 @@ env/
 # Phase 2 large models/artifacts
 JobSkill_RecommendationEngine/models/
 JobSkill_RecommendationEngine/artifacts/
-JobSkill_RecommendationEngine/src/kb_loader.py
+
+# ui
+ui/

@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from .routers import resume, match, recommend, skills  # Phase 2
 from src.api.routers import auth  # Phase 1 (re-use login)
 
@@ -6,6 +7,15 @@ app = FastAPI(
     title="Job Skill Recommendation Engine API (Phase 2)",
     version="0.1.0",
     description="Phase 2: Resume parsing, skill suggestions, matching, and job recommendations",
+)
+
+# Allow frontend access
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # or ["http://127.0.0.1:5500", "http://localhost:5500"]
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # Include routers
