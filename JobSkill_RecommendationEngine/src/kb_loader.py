@@ -2,7 +2,7 @@
 import json
 import psycopg2
 from pathlib import Path
-from src.core.config import settings
+from JobSkill_RecommendationEngine.src.core.config import settings
 
 # -------------------------------
 # DB connection settings (local)

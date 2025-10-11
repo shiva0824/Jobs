@@ -1,7 +1,7 @@
 import psycopg2
 from psycopg2.extras import DictCursor
 from typing import Dict, List
-from src.core.config import settings
+from JobSkill_RecommendationEngine.src.core.config import settings
 
 
 # -------------------------------
