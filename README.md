@@ -313,9 +313,24 @@ A fully responsive, interactive front-end built with **HTML / CSS / JavaScript**
 ### Pages:
 
 - **Login Page:** Secure access using JWT-based auth.
-- **Match Page:** Upload a job description and see extracted skills, missing/matched/extra analysis.
+
+  ![Login Page](screenshots/login.png)
+
+- **Home Page:** Overview of features and navigation.
+
+  ![Home Page](screenshots/home.png)
+
+- **Match Page:** Upload a resume, job description and see extracted skills, missing/matched/extra analysis.
+
+  ![Match Page](screenshots/job_match.png)
+
 - **Recommendation Page:** Upload a resume to get AI-generated job suggestions.
+
+  ![Recommendation Page](screenshots/job_recommendation.png)
+
 - **About Page:** Explains how the AI works, data limitations, and privacy.
+
+  ![About Page](screenshots/about.png)
 
 ### Tech Highlights:
 
