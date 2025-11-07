@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillMatch AI - Job Recommendations</title>
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta name="theme-color" content="#4f46e5" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script defer src="./assets/js/navbar.js"></script>
+    <script defer src="./assets/js/session.js"></script>
+    <script defer src="./assets/js/recommend.js"></script>
+  </head>
+
+  <body class="recommend-page">
+    <div id="navbar"></div>
+
+    <main class="container fade-in">
+      <h1>AI Job Recommendations</h1>
+      <p class="text-light">
+        Upload your resume to let our AI analyze your skills and recommend the most relevant job roles tailored to you.
+      </p>
+
+      <section class="card">
+        <input type="file" id="resumeFile" accept=".pdf,.docx" />
+        <button id="extractBtn" class="btn primary-btn">Extract Skills</button>
+      </section>
+
+      <section id="skills-section" class="card" style="display: none">
+        <h2>Extracted / Editable Skills</h3>
+        <p class="text-light">
+          Refine your skills below to help AI deliver better, more personalized job recommendations.
+        </p>
+        <textarea id="resumeSkillsBox" rows="5"></textarea>
+        <button id="confirmSkillsBtn" class="btn accent-btn">
+          Get Recommendations
+        </button>
+      </section>
+
+      <section id="results-section" style="display: none">
+        <h2>Recommended Jobs</h2>
+        <div id="results" class="job-results"></div>
+        <p id="recommendFeedback" class="feedback-message"></p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 JobSkillMatcher • Built by <strong>Shiva Prasad</strong></p>
+      <div class="footer-icons">
+        <a
+          href="https://github.com/shiva0824"
+          target="_blank"
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/shivaprasad0824/"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="./assets/js/footer.js"></script>
+
+    <!-- Brand Loading Overlay -->
+    <div
+      id="loadingOverlay"
+      class="loading-overlay"
+      style="display: none"
+      aria-live="polite"
+    >
+      <div class="brand-loader">
+        <div class="brand-coin">SM</div>
+        <div class="ring"></div>
+        <div class="ring ring2"></div>
+      </div>
+      <p>Analyzing with SkillMatch AI…</p>
+    </div>
+  </body>
+</html>

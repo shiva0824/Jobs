@@ -1,0 +1,784 @@
+/* ===================================
+   Global Theme
+   =================================== */
+:root {
+  --primary: #4f46e5;
+  --secondary: #06b6d4;
+  --accent: #f59e0b;
+  --bg: #f9fafb;
+  --text-dark: #111827;
+  --text-light: #6b7280;
+  --white: #ffffff;
+  --success: #10b981;
+  --danger: #ef4444;
+  --radius: 10px;
+  --shadow: 0 4px 12px rgba(0,0,0,0.1);
+  --transition: 0.3s ease;
+  font-family: "Inter","Poppins",sans-serif;
+}
+
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text-dark);
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+/* ==== Responsive polish: navbar alignment + no horizontal scroll ==== */
+html, body { max-width: 100%; overflow-x: hidden; }                /* kill right-side gap */
+* { box-sizing: border-box; }                                       /* be safe */
+
+/* container width (keeps pages consistent + prevents overflow) */
+.container { width: min(1100px, 92%); margin: 0 auto; }
+
+/* mobile menu takes exact viewport width */
+@media (max-width: 768px) {
+  .hamburger { display: flex; }
+  .nav-right.show {
+    left: 0; right: 0; width: 100%;
+  }
+}
+
+
+
+/* ===================================
+   Navbar
+   =================================== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  padding: 1rem 2rem;
+  color: var(--white);
+  box-shadow: var(--shadow);
+  gap: 1rem;
+  min-height: 64px;
+}
+
+.glassy {
+  backdrop-filter: blur(6px);
+}
+
+.nav-right a {
+  color: var(--white);
+  margin-left: 1.2rem;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-right button {
+  margin-left: 1rem;
+}
+
+.nav-right a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--accent);
+  transition: width var(--transition);
+}
+.nav-right a:hover::after,
+.nav-right a.active::after {
+  width: 100%;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-left h2 {
+  margin: 0;
+  line-height: 3;
+}
+
+
+/* ===================================
+   Responsive Navbar Hamburger
+   =================================== */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 30px;
+  height: 30px;    
+}
+
+.hamburger span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Cross animation */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -6px);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  .nav-left h2 {
+    font-size: 1.4rem;
+  }
+  .nav-right {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, var(--primary), var(--secondary));
+    width: 100%;
+    padding: 1rem 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  .nav-right.show-menu {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+}
+
+
+/* ===================================
+   Buttons
+   =================================== */
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+}
+.primary-btn {
+  background: var(--primary);
+  color: var(--white);
+}
+.primary-btn:hover {
+  background: var(--secondary);
+  transform: translateY(-2px);
+}
+.accent-btn {
+  background: var(--accent);
+  color: var(--white);
+}
+.accent-btn:hover {
+  background: #eab308;
+  transform: translateY(-2px);
+}
+.danger-btn {
+  background: var(--danger);
+  color: var(--white);
+}
+.small-btn { padding: 0.4rem 0.8rem; font-size: 0.85rem; }
+.w-100 { width: 100%; }
+
+/* ===================================
+   Hero Section
+   =================================== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+  background: radial-gradient(circle at top left,#e0f2fe 0%,#f9fafb 60%);
+  text-align: center;
+  padding: 2rem;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+.hero-content p {
+  max-width: 600px;
+  margin: 1rem auto 2rem;
+  color: var(--text-light);
+  font-size: 1.1rem;
+}
+
+/* ===================================
+   Containers & Cards
+   =================================== */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Card Layout - Wider on main pages */
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.8rem;
+  width: 85%;
+  max-width: 900px; /* wider than before */
+  margin: 2rem auto;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* ===================================
+   Inputs & Textareas
+   =================================== */
+input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: var(--radius);
+  border: 1px solid #d1d5db;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(79,70,229,0.2);
+}
+
+/* ===================================
+   Results Styling
+   =================================== */
+.results-box p { margin: 0.4rem 0; }
+
+.feedback-message {
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  line-height: 1.6;
+  animation: fadeIn 0.6s ease-in-out;
+  font-style: italic;
+}
+
+.feedback-message span {
+  font-size: 1.4rem;
+  margin-right: 6px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--white);
+}
+.badge.matched { background: var(--success); }
+.badge.missing { background: var(--danger); }
+.badge.extra   { background: var(--accent); }
+
+/* ===================================
+   Job Recommendation Cards
+   =================================== */
+.job-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  transition: var(--transition);
+}
+.job-card:hover {
+  transform: translateY(-3px);
+}
+.job-card[data-score="high"] { border-left: 5px solid var(--success); }
+.job-card[data-score="mid"]  { border-left: 5px solid var(--accent); }
+.job-card[data-score="low"]  { border-left: 5px solid var(--danger); }
+
+/* ===================================
+   Login Page
+   =================================== */
+.login-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(120deg,var(--primary),var(--secondary));
+}
+.login-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  width: 22rem;
+  text-align: center;
+}
+.login-card h2 {
+  color: var(--primary);
+}
+
+/* Adjust spacing between heading and subtext */
+.container h1,h2 {
+  margin-bottom: 0.5rem; /* reduce vertical gap */
+}
+
+.text-light {
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  margin-top: 0; /* remove top gap to tighten spacing */
+}
+
+
+/* ===================================
+   Footer
+   =================================== */
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background: #f1f5f9;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+/* ===================================
+   Animations
+   =================================== */
+.fade-in { animation: fadeIn 0.8s ease forwards; opacity: 0; }
+@keyframes fadeIn { to { opacity: 1; } }
+
+/* ===================================
+   Responsive
+   =================================== */
+@media (max-width: 768px) {
+  .hero-content h1 { font-size: 1.8rem; }
+  .hero-content p { font-size: 1rem; }
+  .card { padding: 1rem; }
+}
+
+.spinner-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 10px;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+.highlight {
+  border-left: 5px solid var(--secondary);
+  padding-left: 1rem;
+}
+
+
+/* ===================================
+   Match Score Progress Ring
+   =================================== */
+.score-ring {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  margin: 1rem auto;
+}
+.score-ring svg {
+  transform: rotate(-90deg);
+  width: 110px;
+  height: 110px;
+}
+.score-ring circle {
+  fill: none;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1s ease;
+}
+.score-ring .bg {
+  stroke: #e5e7eb;
+}
+.score-ring .progress {
+  stroke-dasharray: 314; /* 2 * π * r (r=50) */
+  stroke-dashoffset: 314;
+}
+.score-ring .score-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+/* ===================================
+   Footer
+   =================================== */
+.footer {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  color: var(--white);
+  text-align: center;
+  padding: 1.2rem 0;
+  position: relative;
+  margin-top: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.footer-links a {
+  color: var(--white);
+  margin: 0 0.5rem;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.footer-links a:hover {
+  transform: translateY(-2px);
+  color: var(--accent);
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 8px;
+}
+
+.footer-icons a {
+  color: var(--white);
+  font-size: 23px; /* increased size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease, color 0.25s ease;
+  text-decoration: none;
+}
+
+.footer-icons a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.footer-icons a:hover {
+  transform: translateY(-3px) scale(1.08);
+  color: var(--accent);
+}
+
+
+
+
+
+/* Scroll-to-top button */
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-top:hover {
+  background: var(--secondary);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    font-size: 0.9rem;
+  }
+  .scroll-top {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+/* ===================================
+   Login Page Custom Styles
+   =================================== */
+.login-title {
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #1e293b; /* deep navy blue */
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.3px;
+}
+
+.login-subtitle {
+  color: #334155; /* slate blue-gray */
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+
+.login-card {
+  width: 22rem;
+  border-radius: var(--radius);
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+  .login-title {
+    font-size: 1.6rem;
+  }
+  .login-subtitle {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* ===================================
+   Index Page Footer Line
+   =================================== */
+.powered-text {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6b7280; /* subtle gray */
+  margin-top: 3rem;
+  letter-spacing: 0.3px;
+}
+
+
+/* ===================================
+   Global Loading Overlay
+   =================================== */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  font-family: "Inter", sans-serif;
+}
+
+.spinner {
+  border: 5px solid #e5e7eb;
+  border-top: 5px solid var(--primary);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 0.9s linear infinite;
+  margin-bottom: 1rem;
+}
+
+.loading-overlay p {
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===================================
+   Footer Anchoring for Match & Recommend Pages
+   =================================== */
+body.match-page,
+body.recommend-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body.match-page main,
+body.recommend-page main {
+  flex: 1;
+}
+
+/* Make footer visible at first glance on Home */
+body.home-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body.home-page main {
+  flex: 1;
+}
+
+
+
+/* Fix file input alignment */
+input[type="file"] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px;
+}
+
+/* Wider content area on Match & Recommend */
+body.match-page section,
+body.recommend-page section {
+  max-width: 1100px;   /* adjust 1000–1200 if you want */
+}
+
+/* Make cards fill the wider section */
+body.match-page .card,
+body.recommend-page .card {
+  width: 100%;
+  max-width: none;
+}
+
+
+/* ===================================
+   Brand Loader (mini logo animation)
+   =================================== */
+.brand-loader {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0.75rem;
+}
+
+.brand-coin {
+  position: absolute;
+  inset: 12px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff;
+  font-weight: 800;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 22px rgba(79, 70, 229, 0.35);
+}
+
+.ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 4px solid rgba(79, 70, 229, 0.15);
+  border-top-color: var(--primary);
+  animation: spin 1.1s linear infinite;
+  box-sizing: border-box;
+}
+
+.ring2 {
+  inset: -8px;
+  border-color: rgba(6, 182, 212, 0.12);
+  border-top-color: var(--secondary);
+  animation-duration: 1.6s;
+}
+
+.loading-overlay p {
+  margin-top: 0.3rem;
+  color: var(--text-dark);
+  font-size: 1.05rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.brand-link {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.brand-link:hover {
+  opacity: 0.85;
+}
+
+
+.about-page h1,
+.about-page p.text-light {
+  text-align: center;
+}
+
+.about-page .card {
+  max-width: 800px;
+  margin: 1rem auto; /* center all cards */
+  text-align: left;
+}
+
+/* About page readability improvements */
+.about-page .card p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+.hint-text {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  text-align: center;
+}

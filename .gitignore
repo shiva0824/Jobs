@@ -26,6 +26,3 @@ env/
 # Phase 2 large models/artifacts
 JobSkill_RecommendationEngine/models/
 JobSkill_RecommendationEngine/artifacts/
-
-# ui
-ui/

@@ -11,7 +11,7 @@ An end-to-end NLP project for extracting skills from job descriptions, parsing r
 - [Step 3: Model Training](#step-3-model-training)
 - [Step 4: Model API](#step-4-model-api)
 - [Step 5: Recommendation Engine](#step-5-recommendation-engine)
-- [Step 6: Deployment & Web UI](#step-6-deployment-web-ui)
+- [Step 6: Web UI (SkillMatch AI Interface)](#step-6-web-ui-skillmatch-ai-interface)
 
 ---
 
@@ -306,19 +306,31 @@ Knowledge Base (KB):
   - skills table: normalized skills
   - role_skills table: mapping between roles and skills
 
-## What’s Next
+## Step 6: Web UI (SkillMatch AI Interface)
 
-With the **Recommendation Engine** complete, the next phase will focus on **deployment and user interface**:
+A fully responsive, interactive front-end built with **HTML / CSS / JavaScript**, designed to interact with the FastAPI backend.
 
-- Frontend (React/Next.js):
+### Pages:
 
-  - Upload resume or paste job description.
-  - Show extracted skills and allow manual edits.
-  - Display match scores and missing skills.
-  - Dedicated page for job recommendations with filters (e.g., only jobs ≥50% match).
+- **Login Page:** Secure access using JWT-based auth.
+- **Match Page:** Upload a job description and see extracted skills, missing/matched/extra analysis.
+- **Recommendation Page:** Upload a resume to get AI-generated job suggestions.
+- **About Page:** Explains how the AI works, data limitations, and privacy.
 
-- Backend Deployment (AWS):
-  - Containerize FastAPI with Docker.
-  - Deploy API on AWS (ECS/EC2/Lambda).
-  - Host Postgres in AWS RDS (private subnet).
-  - Secure API ↔ DB with VPC and IAM.
+### Tech Highlights:
+
+- Responsive design with custom CSS (no frameworks)
+- FontAwesome icons + gradient theme
+- Async JS fetch calls to backend APIs
+- Dynamic loading overlay (SkillMatch AI animation)
+- Error handling + feedback cards
+
+## What's Next
+
+Upcoming work will focus on full cloud deployment with **Terraform + AWS**:
+
+- **FastAPI Deployment:** EC2 behind ALB + ACM (HTTPS)
+- **Database:** PostgreSQL in RDS (private subnet)
+- **Networking:** Custom VPC + public/private subnets + NAT gateway
+- **Automation:** Cron patches, backups to S3
+- **Frontend:** Netlify /Vercel hosting

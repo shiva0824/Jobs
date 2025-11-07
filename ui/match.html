@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillMatch AI - Match Jobs</title>
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta name="theme-color" content="#4f46e5" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script defer src="./assets/js/navbar.js"></script>
+    <script defer src="./assets/js/session.js"></script>
+    <script defer src="./assets/js/match.js"></script>
+  </head>
+
+  <body class="match-page">
+    <div id="navbar"></div>
+
+    <main class="container fade-in">
+      <h1>AI Job Match Assistant</h1>
+      <p class="text-light">
+        Upload your resume to let our AI identify your key skills and match them
+        against real job descriptions.
+      </p>
+
+      <!-- Upload Section -->
+      <section class="card">
+        <input type="file" id="resumeFile" accept=".pdf,.docx" />
+        <button id="extractBtn" class="btn primary-btn">Extract Skills</button>
+      </section>
+
+      <!-- Skills Review Section -->
+      <section id="skills-section" class="card" style="display: none">
+        <h2>Extracted / Editable Skills</h2>
+        <p class="text-light">
+          Refine your extracted skills below to improve AI match accuracy.
+        </p>
+        <textarea id="resumeSkillsBox" rows="6"></textarea>
+        <button id="confirmSkillsBtn" class="btn accent-btn">
+          Confirm & Continue
+        </button>
+      </section>
+
+      <!-- Job Description Section -->
+      <section id="jd-section" class="card" style="display: none">
+        <h2>Job Description</h2>
+        <textarea
+          id="jobDescription"
+          rows="6"
+          placeholder="Paste job description here..."
+        ></textarea>
+        <button id="compareBtn" class="btn primary-btn">Compare Skills</button>
+      </section>
+
+      <!-- Results Section -->
+      <section id="results-section" class="card" style="display: none">
+        <h2>Match Insights</h2>
+        <div id="results" class="results-box"></div>
+        <p id="feedbackMessage" class="feedback-message"></p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 JobSkillMatcher • Built by <strong>Shiva Prasad</strong></p>
+      <div class="footer-icons">
+        <a
+          href="https://github.com/shiva0824"
+          target="_blank"
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/shivaprasad0824/"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="./assets/js/footer.js"></script>
+
+    <!-- Brand Loading Overlay -->
+    <div
+      id="loadingOverlay"
+      class="loading-overlay"
+      style="display: none"
+      aria-live="polite"
+    >
+      <div class="brand-loader">
+        <div class="brand-coin">SM</div>
+        <div class="ring"></div>
+        <div class="ring ring2"></div>
+      </div>
+      <p>Analyzing with SkillMatch AI…</p>
+    </div>
+  </body>
+</html>

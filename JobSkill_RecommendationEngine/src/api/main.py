@@ -4,9 +4,9 @@ from .routers import resume, match, recommend, skills  # Phase 2
 from src.api.routers import auth  # Phase 1 (re-use login)
 
 app = FastAPI(
-    title="Job Skill Recommendation Engine API (Phase 2)",
+    title="Job Skill Recommendation Engine API",
     version="0.1.0",
-    description="Phase 2: Resume parsing, skill suggestions, matching, and job recommendations",
+    description="Resume parsing, skill suggestions, matching, and job recommendations",
 )
 
 # Allow frontend access

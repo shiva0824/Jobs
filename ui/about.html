@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillMatch AI - About Us</title>
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta name="theme-color" content="#4f46e5" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script defer src="./assets/js/navbar.js"></script>
+    <script defer src="./assets/js/session.js"></script>
+  </head>
+  <body class="about-page">
+    <div id="navbar"></div>
+
+    <main class="container fade-in">
+      <h1>About SkillMatch AI</h1>
+      <p class="text-light" style="margin-top: -6px">
+        How we extract skills, compare with job descriptions, and recommend
+        roles.
+      </p>
+
+      <section class="card">
+        <h2>How It Works</h2>
+        <ul>
+          <li>
+            <strong>Resume parsing:</strong> your uploaded PDF/DOCX is parsed
+            and <em>technical skills</em> are extracted by Python logic (plus
+            fallbacks).
+          </li>
+          <li>
+            <strong>Matching:</strong> pasted Job Descriptions are analyzed by
+            an NLP model to find required skills; we then compute
+            <em>matched / missing / extra</em> skills and an overall score.
+          </li>
+          <li>
+            <strong>Recommendations:</strong> your confirmed skills are compared
+            against a PostgreSQL knowledge base of roles; each role gets a score
+            and a breakdown.
+          </li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Tips for Better Results</h2>
+        <ul>
+          <li>
+            Trim your skills to the most relevant ones for the target roles.
+          </li>
+          <li>Paste complete, realistic JDs for better matching.</li>
+          <li>
+            Add missing skills you actually have; plan to learn recurring ones.
+          </li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Accuracy & Limitations</h2>
+        <p class="text-light">
+          Our AI models are trained with limited public data and available
+          compute resources, so skill extraction accuracy may vary depending on
+          your resume format and writing style. The system generally performs
+          above-average for common technical terms but may miss rare or
+          domain-specific skills. If something looks off, simply edit your
+          extracted skills before continuing — this ensures better matching and
+          recommendations.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Privacy</h2>
+        <p class="text-light">
+          Your resume or any personal information is
+          <strong>not stored anywhere</strong> within the app. It’s processed
+          temporarily during your session only to extract skills, and is
+          automatically discarded once you leave or log out.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 JobSkillMatcher • Built by <strong>Shiva Prasad</strong></p>
+      <div class="footer-icons">
+        <a
+          href="https://github.com/shiva0824"
+          target="_blank"
+          aria-label="GitHub"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/shivaprasad0824/"
+          target="_blank"
+          aria-label="LinkedIn"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="./assets/js/footer.js"></script>
+  </body>
+</html>
